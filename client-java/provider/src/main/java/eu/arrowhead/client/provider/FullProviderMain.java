@@ -247,7 +247,6 @@ public class FullProviderMain extends ArrowheadClientMain {
       e.printStackTrace();
       System.out.println("Authorization registration failed!");
     }
-
   }
 
   private void registerToStore() {
