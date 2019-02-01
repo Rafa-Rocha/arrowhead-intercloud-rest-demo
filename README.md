@@ -14,7 +14,7 @@ If this is your first time setting up an Arrowhead cloud, you should first check
 
 For this demo, while you could technically run everything one one machine, it is recommended to use at least two machines, one for each cloud. Next, build the two clouds on each machine, import the corresponding SQL schema (located in _database-schemas_) for each cloud's database, and then run the two clouds.
 
-Then, for both clouds' database, on the table "arrowhead_cloud":
+Unfortunately, for the current version of Arrowhead you have to statically input each cloud's IP into the database. Thus, for both clouds' database, on the table "arrowhead_cloud":
  * Change the address "_192.168.60.22_" with your Cloud 1 address.
  * Change the address "_192.168.60.62_" with your Cloud 2 address.
 
