@@ -18,4 +18,4 @@ Then, for both clouds' database, on the table "arrowhead_cloud":
  * Change the address "_192.168.60.22_" with your Cloud 1 address.
  * Change the address "_192.168.60.62_" with your Cloud 2 address.
 
-Next, open the corresponding _default.conf_ file of the Consumer and Provider projects and change the IP of each Arrowhead service to each cloud's equivalent. Lastly, run the Provider first and the Consumer second.
+Next, open the corresponding _default.conf_ file of the Consumer and Provider projects and change the IP of each Arrowhead service to its cloud's IP. Lastly, run the Provider first and the Consumer second.
