@@ -1,12 +1,12 @@
 # Arrowhead Framework Demo for REST-based Intercloud Communication
 
 This repository serves as a demo for trying out the Arrowhead intercloud communication, using only HTTP/REST.
-This demo replicates the following scenario:
-1. Two Arrowhead Clouds (Cloud 1 and Cloud 2) are setup on different machines;
-2. An Arrowhead Service Provider is registered on Cloud 2;
+As such, this demo replicates the following scenario:
+1. Two Arrowhead Clouds (Cloud 1 and Cloud 2) are set up on different machines;
+2. An Arrowhead Service Provider is registered on Cloud 2's Service Registry;
 3. An Arrowhead Service Consumer asks Cloud 1's Orchestrator for the Provider's service on Cloud 1;
-4. Cloud 1 checks that it does not have the requested service in its Service Registry and contacts its neighbor clouds to check if they have it, through the Gatekeeper system;
-5. Cloud 1 realizes that Cloud 2 has the desired service and requests Cloud 2 for the Service Provider's address.
+4. Cloud 1 realizes that it does not have the requested service in its Service Registry and contacts its neighbor clouds to check if they have it, through the Gatekeeper system;
+5. Cloud 1 learns that Cloud 2 has the desired service, and requests Cloud 2 for the Service Provider's address.
 6. Cloud 2 sends the Service Provider's address to Cloud 1, and Cloud 1 sends it back to the Service Consumer.
 7. Finally, the Service Consumer then requests the Service Provider for its service.
 
