@@ -1,7 +1,7 @@
 # Arrowhead Framework Demo for REST-based Intercloud Communication
 
 This repository serves as a demo for trying out the Arrowhead intercloud communication, using only HTTP/REST.
-This demo abides to the following scenario:
+This demo replicates the following scenario:
 1. Two Arrowhead Clouds (Cloud 1 and Cloud 2) are setup on different machines;
 2. An Arrowhead Service Provider is registered on Cloud 2;
 3. An Arrowhead Service Consumer asks Cloud 1's Orchestrator for the Provider's service on Cloud 1;
@@ -12,10 +12,10 @@ This demo abides to the following scenario:
 
 If this is your first time setting up an Arrowhead cloud, you should first check out Arrowhead's repository (https://github.com/arrowhead-f/core-java) for the tutorial on building and running the Arrowhead services.
 
-For this demo, you should use two PCs, one for each cloud. Next, build and run the two clouds on each PC and import the corresponding SQL schema (located in _database-schemas_) for each cloud's database.
+For this demo, while you could technically run everything one one machine, it is recommended to use at least two machines, one for each cloud. Next, build the two clouds on each machine, import the corresponding SQL schema (located in _database-schemas_) for each cloud's database, and then run the two clouds.
 
 Then, for both clouds' database, on the table "arrowhead_cloud":
  * Change the address "_192.168.60.22_" with your Cloud 1 address.
  * Change the address "_192.168.60.62_" with your Cloud 2 address.
 
-Next, edit the corresponding _default.conf_ file of the Consumer and Provider and change the IP of each Arrowhead service to the correct one. Lastly, run the Provider first and the Consumer second.
+Next, open the corresponding _default.conf_ file of the Consumer and Provider projects and change the IP of each Arrowhead service to each cloud's equivalent. Lastly, run the Provider first and the Consumer second.
